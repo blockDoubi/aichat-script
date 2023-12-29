@@ -1,0 +1,26 @@
+// 
+// Call to action
+// 
+
+section.cta {
+    position: relative;
+    padding: 15rem 0;
+    background-image: url('https://cdn.alpacabro.com/aichat/assets/img/1500x800.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .cta-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: fade-out($black, 0.5);
+    }
+}
