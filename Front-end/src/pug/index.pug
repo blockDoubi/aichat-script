@@ -1,0 +1,184 @@
+doctype html
+html(lang='zh-CN')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='AIChat - 您的智能聊天助手')
+        meta(name='author', content='alpacabro')
+
+        title AIChat - 您的智能聊天助手
+
+        link(rel='icon', type='image/x-icon', href='https://cdn.alpacabro.com/aichat/assets/favicon.ico')
+        link(rel='icon', type='image/png', sizes='32x32', href='https://cdn.alpacabro.com/aichat/assets/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='https://cdn.alpacabro.com/aichat/assets/favicon-16x16.png')
+        link(rel='manifest', href='https://cdn.alpacabro.com/aichat/assets/site.webmanifest')
+
+        // Bootstrap icons
+        link(href='https://cdn.alpacabro.com/aichat/assets/css/bootstrap-icons.css', rel='stylesheet')
+
+        // Google fonts
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+SC:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Noto+Serif+SC:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='https://cdn.alpacabro.com/aichat/assets/css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
+            .container.px-5
+                a.navbar-brand.fw-bold(href='#page-top') AIChat - 智能聊天助手
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.bi-list
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#features') 特性
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#download') 下载
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#activate') 激活
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='https://www.wjx.cn/vm/YW3vckB.aspx', target='_blank') 反馈
+
+        // Mashead header
+        header.masthead
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6
+                        // Mashead text and app badges
+                        .mb-5.mb-lg-0.text-center.text-lg-start
+                            h1.display-1.lh-1.mb-3 智能聊天助手，为您的交流体验带来无限可能！
+                            p.lead.fw-normal.text-muted.mb-5 无论您是在安卓手机上使用还是在Windows桌面上使用，AIChat都将成为您的最佳助理。
+                            .d-flex.flex-column.flex-lg-row.align-items-center
+                                a.me-lg-3.mb-4.mb-lg-0(href='https://dl.alpacabro.com/aichat/AIChat.apk')
+                                    img.app-badge(src='https://cdn.alpacabro.com/aichat/assets/img/android-app-badge.svg', alt='...')
+                                a(href='https://dl.alpacabro.com/aichat/AIChat.zip')
+                                    img.app-badge(src='https://cdn.alpacabro.com/aichat/assets/img/windows-app-badge.svg', alt='...')
+                    .col-lg-6
+                        // Masthead device mockup feature
+                        .masthead-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                            source(src='https://cdn.alpacabro.com/aichat/assets/img/demo-screen.mp4', type='video/mp4')
+
+        // Quote/testimonial aside
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-xl-8
+                        .h2.fs-1.text-white.mb-4 "AIChat真是太棒了！我以前从未想过一个应用可以如此智能地理解我的问题，并提供有用的答案。"
+                        img(src='https://cdn.alpacabro.com/aichat/assets/img/user-svgrepo-com.svg', alt='...', style='height: 3rem;')
+
+        // App features section
+        section#features
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-8.order-lg-1.mb-5.mb-lg-0
+                        .container-fluid.px-5
+                            .row.gx-5
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-chat-square-dots.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt 智能对话
+                                        p.text-muted.mb-0 AIChat的先进算法可理解您的意图，提供更智能的回复。
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-mic.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt 语音识别
+                                        p.text-muted.mb-0 轻松通过语音输入与AIChat交流，无需打字。
+                            .row
+                                .col-md-6.mb-5.mb-md-0
+                                    // Feature item
+                                    .text-center
+                                        i.bi-command.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt 多模型选择
+                                        p.text-muted.mb-0 现已接入多种主流大语言模型，任您挑选。
+                                .col-md-6
+                                    // Feature item
+                                    .text-center
+                                        i.bi-patch-check.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt AR支持
+                                        p.text-muted.mb-0 通过AR模式，获得更加生动的交流体验。
+                    .col-lg-4.order-lg-0
+                        // Features section device mockup
+                        .features-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                            source(src='https://cdn.alpacabro.com/aichat/assets/img/demo-screen.mp4', type='video/mp4')
+
+        // Basic features section
+        section.bg-light
+            .container.px-5
+                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                    .col-12.col-lg-5
+                        h2.display-4.lh-1.mb-4 一款旨在提高生产力的强大智能聊天助手应用
+                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0 AIChat的强大功能包括语音识别、自然语言处理、智能推荐和多语言支持，使您能够与AI助手进行自然而流畅的对话。无论是寻求信息、提问问题、获取建议还是与朋友聊天，AIChat都能够满足您的需求，并以其智能性和便捷性脱颖而出。不管您是想在手机上与朋友分享快乐时光，还是在桌面上高效处理工作任务，AIChat都能够轻松胜任。
+                    .col-sm-8.col-md-6
+                        .px-5.px-sm-0
+                            img.img-fluid.rounded-circle(src='https://cdn.alpacabro.com/aichat/assets/img/900x900.jpg', alt='...')
+
+        // Call to action section
+        section#activate.cta
+            .cta-content
+                .container.px-5
+                    h2.text-white.display-1.lh-1.mb-4
+                        | 输入token，
+                        br
+                        | 畅快享用。
+                    a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://api.alpacabro.cc', target='_blank') 获取Token
+
+        // App badge section
+        section#download.bg-gradient-primary-to-secondary
+            .container.px-5
+                h2.text-center.text-white.font-alt.mb-4 即刻获取此应用！
+                .d-flex.flex-column.flex-lg-row.align-items-center.justify-content-center
+                    a.me-lg-3.mb-4.mb-lg-0(href='https://dl.alpacabro.com/aichat/AIChat.apk', target='_blank')
+                        img.app-badge(src='https://cdn.alpacabro.com/aichat/assets/img/android-app-badge.svg', alt='...')
+                    a(href='https://dl.alpacabro.com/aichat/AIChat.zip', target='_blank')
+                        img.app-badge(src='https://cdn.alpacabro.com/aichat/assets/img/windows-app-badge.svg', alt='...')
+
+        // Footer
+        footer.bg-black.text-center.py-5
+            .container.px-5
+                .text-white-50.small
+                    .mb-2 &copy; Spark 2023. 保留有权利.
+                    a(href='https://app.alpacabro.com/aichat/opensources.html') 开源协议
+                    span.mx-1 &middot;
+                    a(href='https://app.alpacabro.com/aichat/termsofuse.html') 使用条款
+                    span.mx-1 &middot;
+                    a(href='https://app.alpacabro.com/aichat/faq.html') 常见问题
+        
+        include includes/feedback-modal.pug
+
+        // Bootstrap core JS
+        script(src='https://cdn.alpacabro.com/aichat/assets/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='https://cdn.alpacabro.com/aichat/assets/js/scripts.js')

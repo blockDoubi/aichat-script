@@ -1,0 +1,64 @@
+// 
+// Typography
+// 
+
+// Override Bootstrap typography variables
+
+// 
+// Typography
+// 
+
+// Override Bootstrap typography variables
+
+$font-family-base: "Noto Sans SC", // 替换为适合中文的中文字体
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+$headings-font-family: "Noto Serif SC", // 替换为适合中文的中文字体
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+// Custom font family
+
+$alt-font-family: "Kanit", // 替换为另一种适合中文的中文字体，可根据需要自行替换
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+// Override default Bootstrap font weights
+
+$font-weight-normal: 500;
+$headings-font-weight: 600;
+
+
+
+// Override default Bootstrap font weights
+
+$font-weight-normal: 500;
+$headings-font-weight: 600;

@@ -1,0 +1,76 @@
+// Feedback Modal
+
+#feedbackModal.modal.fade(tabindex='-1', aria-labelledby='feedbackModalLabel', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header.bg-gradient-primary-to-secondary.p-4
+                h5#feedbackModalLabel.modal-title.font-alt.text-white 发送反馈
+                button.btn-close.btn-close-white(type='button' data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.border-0.p-4
+
+                // * * * * * * * * * * * * * * *
+                // * * SB Forms Contact Form * *
+                // * * * * * * * * * * * * * * *
+
+                // This form is pre-integrated with SB Forms.
+                // To make this form functional, sign up at
+                // https://startbootstrap.com/solution/contact-forms
+                // to get an API token!
+
+                form#contactForm(data-sb-form-api-token='')
+
+                    // Name input
+                    .form-floating.mb-3
+                        input#name.form-control(
+                            type='text',
+                            placeholder='如何称呼您？'
+                            data-sb-validations='required'
+                        )
+                        label(for='name') 姓名
+                        .invalid-feedback(data-sb-feedback='name:required')
+                            | 请输入姓名。
+                    
+                    // Email address input
+                    .form-floating.mb-3
+                        input#email.form-control(
+                            type='email',
+                            placeholder='仅用于接收回复。'
+                            data-sb-validations='required,email'
+                        )
+                        label(for='email') 邮箱
+                        .invalid-feedback(data-sb-feedback='email:required')
+                            | 请输入邮箱。
+                        .invalid-feedback(data-sb-feedback='email:email')
+                            | 邮箱地址无效。
+
+                    // Message input
+                    .form-floating.mb-3
+                        textarea#message.form-control(
+                            type='text',
+                            placeholder='请在此处输入您的反馈',
+                            style='height: 10rem;'
+                            data-sb-validations='required'
+                        )
+                        label(for='message') 反馈
+                        .invalid-feedback(data-sb-feedback='message:required')
+                            | 请输入反馈
+
+                    // Submit success message
+                    //
+                    // This is what your users will see when the form
+                    // has successfully submitted
+                    #submitSuccessMessage.d-none
+                        .text-center.mb-3
+                            .fw-bolder 反馈发送成功！
+                            | 非常感谢您的反馈！
+
+                    // Submit error message
+                    //
+                    // This is what your users will see when there is
+                    // an error submitting the form
+                    #submitErrorMessage.d-none
+                        .text-center.text-danger.mb-3 反馈发送失败！
+
+                    // Submit Button
+                    .d-grid
+                        button#submitButton.btn.btn-primary.rounded-pill.btn-lg.disabled(type='submit') 提交
